@@ -28,7 +28,6 @@ public class HttpBinController {
                 .toBodilessEntity();
 
         log.info("{} on {}", result.getStatusCode(), Thread.currentThread());
-
         return Thread.currentThread().toString();
     }
 
