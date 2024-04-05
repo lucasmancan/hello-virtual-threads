@@ -13,7 +13,7 @@ ac701581683b   hello-virtual-threads-nginx-1   5.36%     29.14MiB / 128MiB   22.
 
 Resultado gatling:
 
-![Texto Alternativo](https://github.com/lucasmancan/hello-virtual-threads/blob/master/spring-mvc-async.png)
+<img src="https://github.com/lucasmancan/hello-virtual-threads/blob/main/spring-mvc-async.png">
 
 Usando Spring MVC padrão
 
@@ -23,8 +23,7 @@ f40659e0f10b   hello-virtual-threads-api1-1    10.36%    420.7MiB / 550MiB   76.
 
 Resultado Gatling
 
-![Texto Alternativo](https://github.com/lucasmancan/hello-virtual-threads/blob/master/spring-mvc-default.png)
-
+<img src="https://github.com/lucasmancan/hello-virtual-threads/blob/main/spring-mvc-default.png">
 
 Referências
 https://www.danvega.dev/blog/virtual-threads-spring-boot
