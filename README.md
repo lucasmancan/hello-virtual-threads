@@ -23,7 +23,7 @@ f40659e0f10b   hello-virtual-threads-api1-1    10.36%    420.7MiB / 550MiB   76.
 
 Resultado Gatling
 
-<img src="https://github.com/lucasmancan/hello-virtual-threads/blob/main/spring-virtual-threads.png">
+<img src="https://github.com/lucasmancan/hello-virtual-threads/blob/main/spring-mvc-default.png">
 
 Virtual threads Spring
 
@@ -32,6 +32,7 @@ CONTAINER ID   NAME                            CPU %     MEM USAGE / LIMIT   MEM
 41fe7dc92a11   hello-virtual-threads-nginx-1   4.70%     17.93MiB / 128MiB   14.00%    8.25MB / 8.3MB    0B / 12.3kB   2
 
 
+<img src="https://github.com/lucasmancan/hello-virtual-threads/blob/main/spring-virtual-threads.png">
 
 
 Referências
