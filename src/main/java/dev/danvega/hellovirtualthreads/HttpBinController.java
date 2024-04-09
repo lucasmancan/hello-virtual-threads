@@ -25,7 +25,7 @@ public class HttpBinController {
         restClient = restClientBuilder.baseUrl("https://httpbin.org/").build();
     }
 
-    @GetMapping("/block/sync/{seconds}")
+    @GetMapping("/block/{seconds}")
     public String delay2(@PathVariable int seconds) {
         ResponseEntity<Void> result = getVoidResponseEntity(seconds);
         log.info("{} on {}", result.getStatusCode(), Thread.currentThread());
@@ -33,14 +33,14 @@ public class HttpBinController {
     }
 
 
-    @GetMapping("/block/{seconds}")
-    public CompletableFuture<String> delay(@PathVariable int seconds) {
-        return CompletableFuture.supplyAsync(() -> {
-            ResponseEntity<Void> result = getVoidResponseEntity(seconds);
-            log.info("{} on {}", result.getStatusCode(), Thread.currentThread());
-            return Thread.currentThread().toString();
-        });
-    }
+//    @GetMapping("/block/{seconds}")
+//    public CompletableFuture<String> delay(@PathVariable int seconds) {
+//        return CompletableFuture.supplyAsync(() -> {
+//            ResponseEntity<Void> result = getVoidResponseEntity(seconds);
+//            log.info("{} on {}", result.getStatusCode(), Thread.currentThread());
+//            return Thread.currentThread().toString();
+//        });
+//    }
 
 
     private ResponseEntity<Void> getVoidResponseEntity(int seconds) {

@@ -23,7 +23,7 @@ class VirtualThreadsSimulation
     }
     .exec(
       http("delay")
-        .get(s => s"/httpbin/block/sync/3")
+        .get(s => s"/httpbin/block/3")
         .check(
           status.in(200, 422),
           status.saveAs("httpStatus")
